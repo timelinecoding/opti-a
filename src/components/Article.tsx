@@ -64,7 +64,7 @@ export default function Article() {
                             X
                         </Button>
                         <Typography variant="h5" sx={{ color: "#ffc000", fontWeight: "bold" }}>
-                            The Art of Dark Design
+                            Agentic Optimization
                         </Typography>
                     </Box>
                     <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "60vh" }}>

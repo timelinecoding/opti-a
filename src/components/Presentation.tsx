@@ -40,7 +40,7 @@ export default function Presentation() {
                 <Button onClick={handlePreviewClick} sx={buttonStyles}>
                     Preview Slides
                 </Button>
-                <Button component="a" href="/Opti_a_Presentation.pdf" download sx={buttonStyles}>
+                <Button component="a" href="/OptiA_Presentation.pdf" download sx={buttonStyles}>
                     Download Slides
                 </Button>
             </Box>
@@ -97,7 +97,7 @@ export default function Presentation() {
                     ) : (
                         <Box sx={{ position: "relative" }}>
                             <iframe
-                                src="/Opti_a_Presentation.pdf"
+                                src="/OptiA_Presentation.pdf"
                                 width="100%"
                                 height="600"
                                 style={{ border: "1px solid" }}
