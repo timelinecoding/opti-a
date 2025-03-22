@@ -15,7 +15,7 @@ export default function Article() {
             <SectionTitle title="Featured Article" />
             <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
                 <ArticleCard
-                    title="Opti-A"
+                    title="Agentic Optimization"
                     description="Explore insights on the art of dark design."
                     handleOpenModal={handleOpenModal}
                 />
@@ -69,7 +69,7 @@ export default function Article() {
                             X
                         </Button>
                         <Typography variant="h5" sx={{ color: "#ffc000", fontWeight: "bold" }}>
-                            The Art of Dark Design
+                            Agentic Optimization
                         </Typography>
                     </Box>
                     <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "65vh", p:2 ,
