@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, Modal, Paper, Typography } from "@mui/material";
+import {Box, Button, Modal, Paper, Typography, useMediaQuery} from "@mui/material";
 import Presentation from "../components/Presentation.tsx";
 import Article from "../components/Article.tsx";
 import VideoSection from "../components/VideoSection.tsx";
@@ -15,7 +15,12 @@ const colors = {
 };
 
 const SectionTitle = ({ title } : {title: string }) => (
-    <Typography variant="h4" sx={{ fontWeight: "bold", textTransform: "uppercase", color: colors.accent, letterSpacing: 2 }}>
+    <Typography variant="h4" sx={{ fontWeight: "bold", textTransform: "uppercase", color: colors.accent, letterSpacing: 2,
+        "@media (max-width: 600px)": {
+            fontSize: '1.5rem',
+            fontFamily: "cursive",
+        },
+    }}>
         {title}
     </Typography>
 );
@@ -42,8 +47,11 @@ const teamMembers = [
 ];
 
 
+
 const Home = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const isMobile = useMediaQuery("(max-width:600px)");
+
 
     return (
         <Box
@@ -68,9 +76,27 @@ const Home = () => {
                     mb: 8,
                 }}
             >
-                <Box sx={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
-                    <Typography variant="h3" sx={{ fontWeight: "bold", color: colors.textMuted }}>
-                        Welcome to Opti-A
+                <Box sx={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)",}}>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontWeight: "bold",
+                            color: colors.textMuted,
+                            textAlign: "center",
+                            "@media (max-width: 600px)": {
+                                fontSize: "2rem",
+                            },
+                        }}
+                    >
+                        {isMobile ? (
+                            <>
+                                Welcome <br />
+                                to <br />
+                                Opti-A
+                            </>
+                        ) : (
+                            "Welcome to Opti-A"
+                        )}
                     </Typography>
                     <Typography sx={{ mt: 2, color: colors.textMuted }}>Agentic Solution to Optimization Problems</Typography>
                 </Box>
