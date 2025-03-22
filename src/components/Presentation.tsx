@@ -47,7 +47,7 @@ export default function Presentation() {
                 </Button>
                 <Button
                     component="a"
-                    href="/public/Opti_a_Presentation.pdf"
+                    href="/Opti_a_Presentation.pdf"
                     download
                     sx={buttonStyles}
                 >
@@ -59,7 +59,7 @@ export default function Presentation() {
             {previewVisible && (
                 <Box sx={{ mt: 4, display: "flex", justifyContent: "center", position: "relative" }}>
                     <iframe
-                        src="/public/Opti_a_Presentation.pdf"
+                        src="/Opti_a_Presentation.pdf"
                         width="800"
                         height="600"
                         style={{ border: "1px solid" }}
