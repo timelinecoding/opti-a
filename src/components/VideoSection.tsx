@@ -14,9 +14,9 @@ export default function VideoSection() {
                     textTransform: "uppercase",
                     color: "#ffc000",
                     letterSpacing: 2,
+                    fontFamily: "Roboto Slab",
                     "@media (max-width: 600px)": {
                         fontSize: "1.5rem",
-                        fontFamily: "cursive",
                     },
                 }}
             >

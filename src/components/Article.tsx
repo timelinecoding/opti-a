@@ -2,6 +2,7 @@ import { Box, Button, Modal, Typography } from "@mui/material";
 import { SectionTitle } from "../const/SectionTitle.tsx";
 import { useState } from "react";
 import ArticleCard from "../const/ArticleCard.tsx";
+import ReusableImage from "../const/ReusableImage"; // Adjust the import path as necessary
 
 export default function Article() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,17 +13,14 @@ export default function Article() {
     return (
         <Box sx={{ mt: 8 }}>
             <SectionTitle title="Featured Article" />
-
-            {/* Article Card */}
             <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
                 <ArticleCard
-                    title="The Art of Dark Design"
+                    title="Opti-A"
                     description="Explore insights on the art of dark design."
                     handleOpenModal={handleOpenModal}
                 />
             </Box>
 
-            {/* View Article Button */}
             <Box sx={{ mt: 4, textAlign: "center" }}>
                 <Button
                     onClick={handleOpenModal}
@@ -38,7 +36,6 @@ export default function Article() {
                 </Button>
             </Box>
 
-            {/* Modal */}
             <Modal open={isModalOpen} onClose={handleCloseModal}>
                 <Box
                     sx={{
@@ -50,24 +47,45 @@ export default function Article() {
                         p: 4,
                         borderRadius: 2,
                         width: "80%",
+                        height: "auto",
+                        maxHeight: '70%',
                         maxWidth: 800,
                         boxShadow: 24,
+                        overflowY: 'auto',
+                        display: "flex",
+                        flexDirection: "column",
                     }}
                 >
-                    <Button
-                        onClick={handleCloseModal}
-                        sx={{ color: "#f20062", fontWeight: "bold", float: "right" }}
-                    >
-                        X
-                    </Button>
-                    <Typography variant="h5" sx={{ color: "#ffc000", fontWeight: "bold" }}>
-                        The Art of Dark Design
-                    </Typography>
-                    <Typography sx={{ mt: 2, opacity: 0.8 }}>
-                        Dark design isn’t just about color; it’s about creating an immersive user experience that feels
-                        mysterious and sophisticated. This article explores the intricacies of dark design and how it
-                        elevates the overall visual appeal and usability of modern digital interfaces.
-                    </Typography>
+                    <Box sx={{ position: "sticky", top: 0, zIndex: 1 }}>
+                        <Button
+                            onClick={handleCloseModal}
+                            sx={{ color: "#f20062", fontWeight: "bold", float: "right" }}
+                        >
+                            X
+                        </Button>
+                        <Typography variant="h5" sx={{ color: "#ffc000", fontWeight: "bold" }}>
+                            The Art of Dark Design
+                        </Typography>
+                    </Box>
+                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "60vh" }}>
+                        <Typography sx={{ opacity: 0.8 }}>
+                            <h2>Introduction</h2>
+                            <p>
+                                Everyone loves camping! But knowing what to pack and balancing necessity with weight limitations can be challenging...
+                            </p>
+
+                            {/* Use the reusable image component */}
+                            <ReusableImage
+                                src="/opti-a_logo.png"
+                                alt="Dark Design"
+                            />
+
+                            <h2>What is Optimization?</h2>
+                            <p>
+                                Optimization problems involve finding the best possible solution by maximizing or minimizing an objective while adhering to certain constraints...
+                            </p>
+                        </Typography>
+                    </Box>
                 </Box>
             </Modal>
         </Box>

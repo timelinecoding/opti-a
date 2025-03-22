@@ -1,5 +1,4 @@
-import { useState } from "react";
-import {Box, Button, Modal, Paper, Typography, useMediaQuery} from "@mui/material";
+import {Box, Button, Paper, Typography, useMediaQuery} from "@mui/material";
 import Presentation from "../components/Presentation.tsx";
 import Article from "../components/Article.tsx";
 import VideoSection from "../components/VideoSection.tsx";
@@ -16,9 +15,9 @@ const colors = {
 
 const SectionTitle = ({ title } : {title: string }) => (
     <Typography variant="h4" sx={{ fontWeight: "bold", textTransform: "uppercase", color: colors.accent, letterSpacing: 2,
+        fontFamily: "Roboto Slab",
         "@media (max-width: 600px)": {
             fontSize: '1.5rem',
-            fontFamily: "cursive",
         },
     }}>
         {title}
@@ -49,7 +48,6 @@ const teamMembers = [
 
 
 const Home = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const isMobile = useMediaQuery("(max-width:600px)");
 
 
@@ -83,8 +81,10 @@ const Home = () => {
                             fontWeight: "bold",
                             color: colors.textMuted,
                             textAlign: "center",
+                            fontSize: "3.5rem",
+                            fontFamily: "Roboto Slab",
                             "@media (max-width: 600px)": {
-                                fontSize: "2rem",
+                                fontSize: "2.5rem",
                             },
                         }}
                     >
@@ -113,25 +113,6 @@ const Home = () => {
 
             <Presentation/>
 
-            <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                <Box
-                    sx={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        backgroundColor: colors.cardBackground,
-                        p: 4,
-                        borderRadius: 2,
-                        width: "80%",
-                        maxWidth: 800,
-                        boxShadow: 24,
-                    }}
-                >
-                    <Button onClick={() => setIsModalOpen(false)} sx={{ color: colors.primary, fontWeight: "bold", float: "right" }}>X</Button>
-                    <iframe width="100%" height="400" src="https://docs.google.com/presentation/d/e/2PACX-1vTJlLbMC-pGRRttfnXmT6YzQ1XyJZyI-BXMb-BB-xxj_Ub6kIMt7dglFqGxxsBxmwzA4fuBPLcqT2Ub7/embed?start=true&loop=true&delayms=5000" frameBorder="0" allowFullScreen></iframe>
-                </Box>
-            </Modal>
 
             <TeamSection title="Meet the Team" teamMembers={teamMembers} />
 
