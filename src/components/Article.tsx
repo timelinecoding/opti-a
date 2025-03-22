@@ -44,7 +44,7 @@ export default function Article() {
                         left: "50%",
                         transform: "translate(-50%, -50%)",
                         backgroundColor: "#1c1f28",
-                        p: 4,
+                        p: 3,
                         borderRadius: 2,
                         width: "80%",
                         height: "auto",
@@ -67,7 +67,7 @@ export default function Article() {
                             Agentic Optimization
                         </Typography>
                     </Box>
-                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "60vh" }}>
+                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "60vh", p:2 }}>
                         <Typography sx={{ opacity: 0.8 }}>
                             <h2>Introduction</h2>
                             <p>
