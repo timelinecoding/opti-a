@@ -48,12 +48,17 @@ export default function Article() {
                         borderRadius: 2,
                         width: "80%",
                         height: "auto",
-                        maxHeight: '70%',
-                        maxWidth: 800,
+                        maxHeight: '80vh',
+                        maxWidth: '75vw',
                         boxShadow: 24,
                         overflowY: 'auto',
                         display: "flex",
                         flexDirection: "column",
+                        // Responsive design for smaller screens
+                        "@media (max-width: 600px)": {
+                            maxWidth: '90vw',
+
+                        },
                     }}
                 >
                     <Box sx={{ position: "sticky", top: 0, zIndex: 1 }}>
@@ -64,10 +69,15 @@ export default function Article() {
                             X
                         </Button>
                         <Typography variant="h5" sx={{ color: "#ffc000", fontWeight: "bold" }}>
-                            Agentic Optimization
+                            The Art of Dark Design
                         </Typography>
                     </Box>
-                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "60vh", p:2 }}>
+                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "65vh", p:2 ,
+                        // Responsive design for smaller screens
+                        "@media (max-width: 600px)": {
+                            padding: '4px',
+
+                        },}}>
                         <Typography sx={{ opacity: 0.8 }}>
                             <h2>Introduction</h2>
                             <p>
