@@ -111,7 +111,7 @@ const Home = () => {
 
             <Article/>
 
-            <Presentation setIsModalOpen={setIsModalOpen}/>
+            <Presentation/>
 
             <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
                 <Box
