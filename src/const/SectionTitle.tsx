@@ -3,7 +3,12 @@ import {colors} from "./Colors.tsx";
 
 
 export const SectionTitle = ({ title } : {title: string }) => (
-    <Typography variant="h4" sx={{ fontWeight: "bold", textTransform: "uppercase", color: colors.accent, letterSpacing: 2 }}>
+    <Typography variant="h4" sx={{ fontWeight: "bold", textTransform: "uppercase", color: colors.accent, letterSpacing: 2,
+        "@media (max-width: 600px)": {
+        fontSize: '1.5rem',
+        fontFamily: "cursive",
+    },
+    }}>
         {title}
     </Typography>
 );
