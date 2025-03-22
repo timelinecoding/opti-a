@@ -57,11 +57,13 @@ export default function Presentation() {
 
             {/* Conditional PDF Preview */}
             {previewVisible && (
-                <Box sx={{ mt: 4, display: "flex", justifyContent: "center", position: "relative" }}>
+                <Box sx={{ mt: 4, display: "flex", justifyContent: "center", position: "relative", overflow: "auto", // Add scrollbars if needed
+                }}>
                     <iframe
                         src="/Opti_a_Presentation.pdf"
                         width="800"
                         height="600"
+
                         style={{ border: "1px solid" }}
                     />
                     <Button
