@@ -26,22 +26,19 @@ const SectionTitle = ({ title } : {title: string }) => (
 
 const teamMembers = [
     {
-        name: "John Doe",
-        about: "Lead Developer with a passion for building scalable applications.",
-        linkedin: "https://www.linkedin.com/in/johndoe",
-        photoUrl: "https://example.com/john-photo.jpg",  // Replace with actual photo URL
+        name: "Ayodeji Alli-Smith",
+        linkedin: "https://www.linkedin.com/in/smith-ayo",
+        photoUrl: "/smith.png",  // Replace with actual photo URL
     },
     {
-        name: "Jane Smith",
-        about: "UI/UX Designer focusing on creating intuitive user interfaces.",
-        linkedin: "https://www.linkedin.com/in/janesmith",
-        photoUrl: "https://example.com/jane-photo.jpg",  // Replace with actual photo URL
+        name: "Dean Terneu",
+        linkedin: "https://de.linkedin.com/in/dean-terneu-134841226",
+        photoUrl: "https://example.com/dean.jpeg",  // Replace with actual photo URL
     },
     {
-        name: "Sam Lee",
-        about: "Project Manager with a knack for team collaboration and agile methodologies.",
-        linkedin: "https://www.linkedin.com/in/samlee",
-        photoUrl: "https://example.com/sam-photo.jpg",  // Replace with actual photo URL
+        name: "Inês Bastos",
+        linkedin: "https://be.linkedin.com/in/ines-costa-bastos",
+        photoUrl: "https://example.com/ines.jpg",  // Replace with actual photo URL
     },
 ];
 
@@ -104,7 +101,7 @@ const Home = () => {
 
             <SectionTitle title="About Us" />
             <Typography sx={{ mt: 2, color: colors.textMuted }}>
-                Darker Side is a creative space where dark aesthetics and minimalism come together to offer a truly immersive experience.
+                As a team of three final-year students of Applied Computer Science, we developed Opti-A over the course of six weeks as part of our subject TheLab. During this project, we explored the performance of Agentic LLMs in converting natural language optimization problems into mathematical models. 
             </Typography>
 
             <VideoSection/>
@@ -120,17 +117,6 @@ const Home = () => {
             {/* Footer */}
             <Box sx={{mt: 8, opacity: 0.6}}>
                 &copy; 2025 Opti-A. All rights reserved.
-                <Box sx={{mt: 2}}>
-                    <Typography component="a" href="/terms"
-                                sx={{mx: 1, textDecoration: "underline", cursor: "pointer"}}>
-                        Terms of Service
-                    </Typography>
-                    |
-                    <Typography component="a" href="/privacy"
-                                sx={{mx: 1, textDecoration: "underline", cursor: "pointer"}}>
-                        Privacy Policy
-                    </Typography>
-                </Box>
             </Box>
 
             <Button

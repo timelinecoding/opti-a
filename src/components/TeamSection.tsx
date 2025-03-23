@@ -22,7 +22,6 @@ export const TeamSection = ({ title, teamMembers }: TeamSectionProps) => (
                 <Box key={index} sx={{ flex: "1 1 30%", minWidth: 300 }}>
                     <TeamCard
                         title={member.name}
-                        about={member.about}
                         linkedin={member.linkedin}
                         photoUrl={member.photoUrl}  // Pass the photoUrl here
                     />

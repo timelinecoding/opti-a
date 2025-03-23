@@ -41,20 +41,16 @@ const cardStyles = {
 
 interface StyledCardProps {
     title: string;
-    about: string;
     linkedin: string;
     photoUrl: string; // New prop for the profile photo
 }
 
-export const TeamCard = ({ title, about, linkedin, photoUrl }: StyledCardProps) => (
+export const TeamCard = ({ title, linkedin, photoUrl }: StyledCardProps) => (
     <Card sx={cardStyles.container}>
         <CardContent sx={cardStyles.content}>
             <Avatar alt={title} src={photoUrl} sx={cardStyles.avatar} />
             <Typography variant="h6" sx={cardStyles.title}>
                 {title}
-            </Typography>
-            <Typography sx={cardStyles.aboutText}>
-                {about}
             </Typography>
             <Link href={linkedin} target="_blank" sx={cardStyles.linkedinLink}>
                 Connect on LinkedIn

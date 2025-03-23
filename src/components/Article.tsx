@@ -22,17 +22,17 @@ export default function Article() {
             </Box>
 
             <Box sx={{ mt: 4, textAlign: "center" }}>
-                <Button
-                    onClick={handleOpenModal}
-                    sx={{
+                
+                <Button component="a" href="/OptiA_Presentation.pdf" download sx={
+                    {
                         backgroundColor: "#f20062",
                         color: "white",
                         px: 3,
                         py: 1.5,
                         "&:hover": { backgroundColor: "#d10050" },
-                    }}
-                >
-                    View Article
+                    }
+                }>
+                    Download Article
                 </Button>
             </Box>
 
@@ -72,12 +72,14 @@ export default function Article() {
                             Agentic Optimization
                         </Typography>
                     </Box>
-                    <Box sx={{ mt: 2, overflowY: "auto", maxHeight: "65vh", p:2 ,
+                    <Box sx={{
+                        mt: 2, overflowY: "auto", maxHeight: "65vh", p: 2,
                         // Responsive design for smaller screens
                         "@media (max-width: 600px)": {
                             padding: '4px',
 
-                        },}}>
+                        },
+                    }}>
                         <Typography sx={{ opacity: 0.8 }}>
                             <h2>Introduction</h2>
                             <p>
