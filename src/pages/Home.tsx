@@ -112,7 +112,7 @@ const Home = () => {
 
                 <SectionTitle title="About Us" />
                 <Typography sx={{ mt: 2, color: colors.textMuted }}>
-                    As a team of three final-year students of Applied Computer Science specializing in AI, we developed Opti-A over the course of six weeks as part of our subject TheLab. During this project, we explored the performance of Agentic LLMs in converting natural language optimization problems into mathematical models.
+                    As a team of three final-year students of Applied Computer Science specializing in AI, we developed Opti-A over the course of six weeks as part of our subject <i>TheLab</i>. During this project, we explored the performance of Agentic LLMs in converting natural language optimization problems into mathematical models.
                 </Typography>
             </Box>
             <VideoSection />
