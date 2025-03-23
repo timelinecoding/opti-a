@@ -34,7 +34,7 @@ const teamMembers = [
     {
         name: "Dean Terneu",
         linkedin: "https://de.linkedin.com/in/dean-terneu-134841226",
-        photoUrl: "/dean.jpeg",  // Replace with actual photo URL
+        photoUrl: "/dean.png",  // Replace with actual photo URL
     },
     {
         name: "Inês Bastos",
