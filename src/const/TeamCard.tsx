@@ -18,8 +18,8 @@ const cardStyles = {
         textAlign: "center", // Optional: center text for a clean look
     },
     avatar: {
-        width: 72, // Slightly larger avatar to stand out
-        height: 72,
+        width: 90, // Slightly larger avatar to stand out
+        height: 90,
         marginBottom: 2, // Space below the avatar
     },
     title: {
