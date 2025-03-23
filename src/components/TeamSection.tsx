@@ -4,7 +4,6 @@ import { SectionTitle } from "../const/SectionTitle.tsx";
 
 interface TeamMember {
     name: string;
-    about: string;
     linkedin: string;
     photoUrl: string;  // Add the profile photo URL here
 }
