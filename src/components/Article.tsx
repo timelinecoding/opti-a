@@ -88,7 +88,7 @@ export default function Article() {
 
                             {/* Use the reusable image component */}
                             <ReusableImage
-                                src="/opti-a_logo.png"
+                                src="/Opti-a_logo.png"
                                 alt="Dark Design"
                             />
 
