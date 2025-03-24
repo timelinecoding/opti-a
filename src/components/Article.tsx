@@ -58,7 +58,8 @@ export default function Article() {
                         // Responsive design for smaller screens
                         "@media (max-width: 600px)": {
                             maxWidth: '95vw',
-                            p: 3
+                            p: 3,
+                            maxHeight: '87.5vh',
 
                         },
                     }}
