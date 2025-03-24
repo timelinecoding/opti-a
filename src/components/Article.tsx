@@ -126,7 +126,7 @@ export default function Article() {
                             </ul>
 
                             <ReusableImage
-                                src="/Optimization.png"
+                                src="/Optimization.jpg"
                                 alt="optimization"
                             />
 
