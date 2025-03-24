@@ -1,10 +1,10 @@
 import './App.css'
-import Promo from "./pages/Home.tsx";
+import Home from "./pages/Home.tsx";
 
 function App() {
 
     return (
-                <Promo/>
+                <Home/>
     )
 }
 

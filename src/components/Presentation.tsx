@@ -9,7 +9,7 @@ const buttonStyles = {
     px: 3,
     py: 1.5,
     "&:hover": {
-        backgroundColor: colors.primaryHover,
+        "&:hover": {backgroundColor: "#796d0a", color: 'white'},
     },
 };
 

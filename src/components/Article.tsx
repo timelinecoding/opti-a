@@ -23,15 +23,16 @@ export default function Article() {
 
             <Box sx={{ mt: 4, textAlign: "center" }}>
                 
-                <Button component="a" href="/OptiA_Presentation.pdf" download sx={
-                    {
+            <Button
+                    component="a" href="/OptiA_Article.pdf"
+                    sx={{
                         backgroundColor: "#f20062",
                         color: "white",
                         px: 3,
                         py: 1.5,
-                        "&:hover": { backgroundColor: "#d10050" },
-                    }
-                }>
+                        "&:hover": {backgroundColor: "#796d0a", color: 'white'},
+                    }}
+                >
                     Download Article
                 </Button>
             </Box>
@@ -238,7 +239,7 @@ export default function Article() {
                             </p>
 
                             <ReusableImage
-                                src="/img1.png"
+                                src="/Classifier.png"
                                 alt="Dark Design"
                             />
 
@@ -283,7 +284,7 @@ export default function Article() {
                             </p>
 
                             <ReusableImage
-                                src="/img1.png"
+                                src="/Formulator.png"
                                 alt="Dark Design"
                             />
 
@@ -343,7 +344,7 @@ export default function Article() {
                             </ul>
 
                             <ReusableImage
-                                src="/img1.png"
+                                src="/Output.png"
                                 alt="Dark Design"
                             />
 
