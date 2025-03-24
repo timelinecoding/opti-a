@@ -57,7 +57,7 @@ export default function Article() {
                         flexDirection: "column",
                         // Responsive design for smaller screens
                         "@media (max-width: 600px)": {
-                            maxWidth: '90vw',
+                            maxWidth: '95vw',
                             p: 3
 
                         },
@@ -178,7 +178,7 @@ export default function Article() {
                                 text,
                                 it can also interact with tools, retrieve data from the web, run code, and more.
                             </p>
-                            <h2>Why AI Agents for Optimization?</h2>
+                            <h3>Why AI Agents for Optimization?</h3>
                             <p>
                                 One of the key challenges in AI-assisted optimization is accurately extracting
                                 constraints,
@@ -229,7 +229,7 @@ export default function Article() {
                                 well-defined role, collaborate to complete the overall task.
                             </p>
 
-                            <h2>Classifier: Identifying the Problem Type</h2>
+                            <h3>Classifier: Identifying the Problem Type</h3>
                             <p>
                                 The Classifier module is responsible for analyzing the problem description and
                                 categorizing
@@ -243,7 +243,7 @@ export default function Article() {
                                 alt="Dark Design"
                             />
 
-                            <h3>How it works</h3>
+                            <h4>How it works</h4>
                             <ol>
                                 <li style={{marginBottom: '20px'}}><strong>User Input</strong> - The user submits the
                                     problem description through a proxy agent, which acts
@@ -271,7 +271,7 @@ export default function Article() {
                             </ol>
 
 
-                            <h2>Formulation: Deriving the Mathematical Model</h2>
+                            <h3>Formulation: Deriving the Mathematical Model</h3>
                             <p>
                                 The Formulation module is the core of our architecture as it plays a crucial role in
                                 deriving
@@ -288,7 +288,7 @@ export default function Article() {
                                 alt="Dark Design"
                             />
 
-                            <h3>How it works</h3>
+                            <h4>How it works</h4>
                             <ol>
                                 <li style={{marginBottom: '20px'}}><strong>Group Chats</strong> - Extracting each of the
                                     three components (objective function, decision variables, and constraints) follows a
@@ -320,7 +320,7 @@ export default function Article() {
                             </ol>
 
 
-                            <h2>Output: Transforming the Formulation into the Desired Format</h2>
+                            <h3>Output: Transforming the Formulation into the Desired Format</h3>
                             <p>
                                 The Output module is responsible for converting the extracted formulation into the
                                 user’s
