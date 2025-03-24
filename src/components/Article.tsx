@@ -126,8 +126,8 @@ export default function Article() {
                             </ul>
 
                             <ReusableImage
-                                src="/img1.png"
-                                alt="Dark Design"
+                                src="/Optimization.png"
+                                alt="optimization"
                             />
 
                             <p>
@@ -241,7 +241,7 @@ export default function Article() {
 
                             <ReusableImage
                                 src="/Classifier.png"
-                                alt="Dark Design"
+                                alt="classifier"
                             />
 
                             <h4>How it works</h4>
@@ -286,7 +286,7 @@ export default function Article() {
 
                             <ReusableImage
                                 src="/Formulator.png"
-                                alt="Dark Design"
+                                alt="formulator"
                             />
 
                             <h4>How it works</h4>
@@ -346,7 +346,7 @@ export default function Article() {
 
                             <ReusableImage
                                 src="/Output.png"
-                                alt="Dark Design"
+                                alt="output"
                             />
 
                             <ol>
@@ -381,7 +381,7 @@ export default function Article() {
                                     </ul>
                                 </li>
                             </ol>
-                            <br/>
+                            
                             <h2><strong>Technology Stack</strong></h2>
                             <p>To build our agentic optimization system we used the following technologies:</p>
                             <ul>
