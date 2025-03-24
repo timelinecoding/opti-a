@@ -83,7 +83,7 @@ export default function Article() {
 
                         },
                     }}>
-                        <Typography sx={{opacity: 0.8, color: "rgba(255, 255, 255, 0.75)"}}>
+                        <Typography sx={{opacity: 0.9, color: "rgba(255, 255, 255, 0.75)"}}>
                             <h2>Introduction</h2>
                             <p>
                                 Everyone loves camping! However, knowing what to pack and balancing necessity with
