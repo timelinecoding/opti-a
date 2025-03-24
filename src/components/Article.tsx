@@ -45,7 +45,7 @@ export default function Article() {
                         left: "50%",
                         transform: "translate(-50%, -50%)",
                         backgroundColor: "#1c1f28",
-                        p: 3,
+                        p: 4,
                         borderRadius: 2,
                         width: "80%",
                         height: "auto",
