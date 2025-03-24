@@ -75,7 +75,7 @@ export default function Article() {
                         </Typography>
                     </Box>
                     <Box sx={{
-                        mt: 2, overflowY: "auto", maxHeight: "65vh", p: 2,
+                        mt: 1, overflowY: "auto", maxHeight: "65vh", p: 2,
                         // Responsive design for smaller screens
                         "@media (max-width: 600px)": {
                             padding: '4px',
