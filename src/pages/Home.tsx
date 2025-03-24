@@ -100,21 +100,18 @@ const Home = () => {
                 </Box>
             </Paper>
 
-            <Box
-                sx={{
-                    mt: 8,
-                    backgroundColor: colors.cardBackground,
-                    borderRadius: 2,
-                    padding: 4,
-                    justifyContent: "center",
-                    maxWidth: '600px', // or whatever max-width you want
-                    margin: '0 auto', // centers the box horizontally
-                }}
-            >
-
-                <SectionTitle title="About Us" />
+            <SectionTitle title="About Us" />
+            <Box sx={{
+                mt: 8,
+                backgroundColor: colors.cardBackground,
+                borderRadius: 2,
+                padding: 4,
+                justifyContent: "center",
+                maxWidth: '600px', // or whatever max-width you want
+                margin: '0 auto', // centers the box horizontally centers the box horizontally// optional, for some horizontal padding
+            }}>
                 <Typography sx={{ mt: 2, color: colors.textMuted }}>
-                    As a team of three final-year students of Applied Computer Science specializing in AI, we developed Opti-A over the course of six weeks as part of our subject <i>TheLab</i>. During this project, we explored the performance of Agentic LLMs in converting natural language optimization problems into mathematical models.
+                    Darker Side is a creative space where dark aesthetics and minimalism come together to offer a truly immersive experience.
                 </Typography>
             </Box>
             <VideoSection />
