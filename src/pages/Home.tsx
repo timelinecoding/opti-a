@@ -102,12 +102,11 @@ const Home = () => {
 
             <Box
                 sx={{
+                    mt: 8,
                     backgroundColor: colors.cardBackground,
                     borderRadius: 2,
                     padding: 4,
                     justifyContent: "center",
-                    maxWidth: '800px', // or whatever max-width you want
-                    margin: '0 auto', // centers the box horizontally
                 }}
             >
 
